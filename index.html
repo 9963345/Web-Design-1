@@ -1,42 +1,244 @@
-<html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Grand Line Hub</title>
-   <link rel="stylesheet" href="css/style.css">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Grand Line Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<header>
-   <h1>Grand Line Hub</h1>
+    <header>
 
-   <nav>
-       <a href="index.html">Home</a>
-       <a href="characters.html">Characters</a>
-       <a href="reviews.html">Reviews</a>
-   </nav>
-</header>
+        <h1>Grand Line Hub</h1>
 
-<section class="hero">
-   <h2>The Ultimate ONE PIECE Fan Site</h2>
-   <p>Explore the Grand Line with the Straw Hats!</p>
-</section>
-<text> Netflix’s One Piece live-action season one is a triumphant rarity: a faithful, high-budget adaptation that captures the spirit of the anime without merely mimicking it. 
-   With Eiichiro Oda directly involved, the series successfully translates the wacky, colorful world into a grounded, tangible setting. 
-   The 8-episode arc perfectly highlights the emotional core of the East Blue saga, prioritizing character development and the formation of the Straw Hat crew over complex, long-running plots.
-   Iñaki Godoy is perfectly cast as Luffy, bringing infectious charisma and optimism, while Mackenyu’s Zoro and Emily Rudd’s Nami bring charm and emotional depth to the duo.
-   While some side plots are condensed, the action sequences are surprisingly well-executed, blending practical effects with CGI to bring Devil Fruit powers to life. 
-   The show is not afraid to embrace campiness, yet it maintains a "serious" tone that keeps the stakes high.
-   One Piece stands out as a genuine adventure that offers high-quality production value, making it a fantastic entry point for newcomers and a rewarding watch for die-hard fans.
-   It's a fun, heartwarming adaptation that breaks the "live-action curse," deserving its place as a massive success on Netflix. 
-</text> 
+        <nav aria-label="Main Navigation">
 
+            <a href="#home">Home</a>
 
-<footer>
-   <a href="cookie-policy.html">Cookie Policy</a>
-</footer>
+            <a href="#characters">Characters</a>
+
+            <a href="#reviews">Reviews</a>
+
+            <a href="#cookies">Cookie Policy</a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <h2>
+                Explore The World Of ONE PIECE
+            </h2>
+
+            <p>
+                Join Monkey D. Luffy and the Straw Hat Pirates
+                on their adventure across the Grand Line.
+            </p>
+
+            <a href="#characters" class="button">
+                Meet The Crew
+            </a>
+
+        </section>
+
+        <section id="characters">
+
+            <h2 class="section-title">
+                Straw Hat Pirates
+            </h2>
+
+            <div class="characters">
+
+                <article class="card">
+
+                    <img src="images/luffy.jpg"
+                    alt="Monkey D Luffy smiling">
+
+                    <div class="card-content">
+
+                        <h3>Luffy</h3>
+
+                        <p>
+                            Captain of the Straw Hat Pirates
+                            and future Pirate King.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="card">
+
+                    <img src="images/zoro.jpg"
+                    alt="Roronoa Zoro holding swords">
+
+                    <div class="card-content">
+
+                        <h3>Zoro</h3>
+
+                        <p>
+                            Powerful swordsman who fights
+                            using the three sword style.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="card">
+
+                    <img src="images/nami.jpg"
+                    alt="Nami holding climate staff">
+
+                    <div class="card-content">
+
+                        <h3>Nami</h3>
+
+                        <p>
+                            Navigator of the crew and expert
+                            in weather-based attacks.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="reviews">
+
+            <h2 class="section-title">
+                Arc Reviews
+            </h2>
+
+            <div class="reviews">
+
+                <article class="review-box">
+
+                    <h3>Marineford Arc</h3>
+
+                    <p>
+                        Emotional battles and major story
+                        moments make this arc unforgettable.
+                    </p>
+
+                </article>
+
+                <article class="review-box">
+
+                    <h3>Wano Arc</h3>
+
+                    <p>
+                        Amazing animation and exciting fights
+                        made Wano one of the best arcs.
+                    </p>
+
+                </article>
+
+                <article class="review-box">
+
+                    <h3>Enies Lobby Arc</h3>
+
+                    <p>
+                        One of the most emotional and iconic
+                        arcs in the series.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="cookies">
+
+            <h2 class="section-title">
+                Cookie Policy
+            </h2>
+
+            <div class="reviews">
+
+                <article class="review-box">
+
+                    <p>
+                        This website uses cookies and local
+                        storage to improve user experience.
+                        No personal information is collected.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            © 2026 Grand Line Hub
+        </p>
+
+    </footer>
+
+    <div class="cookie-banner"
+    id="cookieBanner">
+
+        <p>
+            This website uses cookies to improve
+            your experience.
+        </p>
+
+        <button id="acceptCookies"
+        type="button">
+
+            Accept
+
+        </button>
+
+    </div>
+
+    <script>
+
+        const cookieBanner =
+        document.getElementById("cookieBanner");
+
+        const acceptCookies =
+        document.getElementById("acceptCookies");
+
+        if(localStorage.getItem("cookiesAccepted")){
+
+            cookieBanner.style.display = "none";
+
+        }
+
+        acceptCookies.addEventListener("click", () => {
+
+            localStorage.setItem(
+                "cookiesAccepted",
+                "true"
+            );
+
+            cookieBanner.style.display = "none";
+
+        });
+
+    </script>
 
 </body>
+
 </html>
