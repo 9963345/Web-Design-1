@@ -11,6 +11,8 @@ body{
     line-height:1.6;
 }
 
+/* HEADER */
+
 header{
     background:#c62828;
     padding:20px;
@@ -33,19 +35,25 @@ nav a{
     color:white;
     text-decoration:none;
     font-weight:bold;
+    transition:0.3s;
 }
 
 nav a:hover{
     color:#fbc02d;
 }
 
+/* HERO SECTION */
+
 .hero{
-    height:90vh;
+    height:70vh;
+
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
+
     text-align:center;
+
     padding:20px;
 
     background:
@@ -68,31 +76,33 @@ nav a:hover{
     font-size:1.2rem;
 }
 
-.button{
-    margin-top:25px;
-    background:#fbc02d;
-    color:black;
-    padding:15px 30px;
-    border:none;
-    border-radius:5px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-.button:hover{
-    background:white;
-}
+/* SECTION TITLES */
 
 .section-title{
     text-align:center;
     margin:60px 0 30px;
     font-size:2.5rem;
+    color:#fbc02d;
 }
+
+/* SUMMARY */
+
+.summary{
+    padding:40px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.summary p{
+    font-size:1.1rem;
+}
+
+/* CHARACTER CARDS */
 
 .characters{
     display:flex;
-    flex-wrap:wrap;
     justify-content:center;
+    flex-wrap:wrap;
     gap:30px;
     padding:20px;
 }
@@ -102,8 +112,11 @@ nav a:hover{
     width:300px;
     border-radius:10px;
     overflow:hidden;
+
     transition:0.3s;
-    box-shadow:0 5px 15px rgba(0,0,0,0.5);
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.5);
 }
 
 .card:hover{
@@ -125,13 +138,15 @@ nav a:hover{
     color:#fbc02d;
 }
 
+/* REVIEWS */
+
 .reviews{
     padding:40px;
+
     display:grid;
 
     grid-template-columns:
-    repeat(auto-fit,
-    minmax(300px,1fr));
+    repeat(auto-fit, minmax(300px,1fr));
 
     gap:25px;
 }
@@ -140,7 +155,17 @@ nav a:hover{
     background:#1e1e1e;
     padding:25px;
     border-radius:10px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.5);
 }
+
+.review-box h3{
+    color:#fbc02d;
+    margin-bottom:15px;
+}
+
+/* FOOTER */
 
 footer{
     background:#000;
@@ -149,38 +174,7 @@ footer{
     margin-top:40px;
 }
 
-.cookie-banner{
-    position:fixed;
-    bottom:0;
-    left:0;
-    width:100%;
-    background:#222;
-    padding:15px;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
-
-    z-index:999;
-}
-
-.cookie-banner p{
-    margin-bottom:10px;
-}
-
-.cookie-banner button{
-    background:#fbc02d;
-    border:none;
-    padding:10px 20px;
-    border-radius:5px;
-    cursor:pointer;
-    font-weight:bold;
-}
-
-.cookie-banner button:hover{
-    background:white;
-}
+/* RESPONSIVE DESIGN */
 
 @media (max-width:768px){
 
@@ -205,6 +199,10 @@ footer{
     .card{
         width:100%;
         max-width:350px;
+    }
+
+    .summary{
+        padding:20px;
     }
 
 }
