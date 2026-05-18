@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,7 +8,7 @@
     <meta name="viewport"
     content="width=device-width, initial-scale=1.0">
 
-    <title>Grand Line Hub</title>
+    <title>Grand Line Hub | Home</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -15,229 +16,79 @@
 
 <body>
 
-    <header>
+<header>
 
-        <h1>Grand Line Hub</h1>
+    <h1>Grand Line Hub</h1>
 
-        <nav aria-label="Main Navigation">
+    <nav aria-label="Main Navigation">
 
-            <a href="#home">Home</a>
+        <a href="index.html">Home</a>
+        <a href="characters.html">Characters</a>
+        <a href="reviews.html">Reviews</a>
 
-            <a href="#characters">Characters</a>
+    </nav>
 
-            <a href="#reviews">Reviews</a>
+</header>
 
-            <a href="#cookies">Cookie Policy</a>
+<main>
 
-        </nav>
+    <section class="hero">
 
-    </header>
-
-    <main>
-
-        <section class="hero" id="home">
-
-            <h2>
-                Explore The World Of ONE PIECE
-            </h2>
-
-            <p>
-                Join Monkey D. Luffy and the Straw Hat Pirates
-                on their adventure across the Grand Line.
-            </p>
-
-            <a href="#characters" class="button">
-                Meet The Crew
-            </a>
-
-        </section>
-
-        <section id="characters">
-
-            <h2 class="section-title">
-                Straw Hat Pirates
-            </h2>
-
-            <div class="characters">
-
-                <article class="card">
-
-                    <img src="https://wallpapercave.com/luffy-smile-wallpapers"
-                    alt="Monkey D Luffy smiling">
-
-                    <div class="card-content">
-
-                        <h3>Luffy</h3>
-
-                        <p>
-                            Captain of the Straw Hat Pirates
-                            and future Pirate King.
-                        </p>
-
-                    </div>
-
-                </article>
-
-                <article class="card">
-
-                    <img src="images/zoro.jpg"
-                    alt="Roronoa Zoro holding swords">
-
-                    <div class="card-content">
-
-                        <h3>Zoro</h3>
-
-                        <p>
-                            Powerful swordsman who fights
-                            using the three sword style.
-                        </p>
-
-                    </div>
-
-                </article>
-
-                <article class="card">
-
-                    <img src="images/nami.jpg"
-                    alt="Nami holding climate staff">
-
-                    <div class="card-content">
-
-                        <h3>Nami</h3>
-
-                        <p>
-                            Navigator of the crew and expert
-                            in weather-based attacks.
-                        </p>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-        <section id="reviews">
-
-            <h2 class="section-title">
-                Arc Reviews
-            </h2>
-
-            <div class="reviews">
-
-                <article class="review-box">
-
-                    <h3>Marineford Arc</h3>
-
-                    <p>
-                        Emotional battles and major story
-                        moments make this arc unforgettable.
-                    </p>
-
-                </article>
-
-                <article class="review-box">
-
-                    <h3>Wano Arc</h3>
-
-                    <p>
-                        Amazing animation and exciting fights
-                        made Wano one of the best arcs.
-                    </p>
-
-                </article>
-
-                <article class="review-box">
-
-                    <h3>Enies Lobby Arc</h3>
-
-                    <p>
-                        One of the most emotional and iconic
-                        arcs in the series.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </section>
-
-        <section id="cookies">
-
-            <h2 class="section-title">
-                Cookie Policy
-            </h2>
-
-            <div class="reviews">
-
-                <article class="review-box">
-
-                    <p>
-                        This website uses cookies and local
-                        storage to improve user experience.
-                        No personal information is collected.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <footer>
+        <h2>
+            Welcome To The Grand Line
+        </h2>
 
         <p>
-            © 2026 Grand Line Hub
+            Discover the world of ONE PIECE,
+            the legendary anime adventure.
         </p>
 
-    </footer>
+    </section>
 
-    <div class="cookie-banner"
-    id="cookieBanner">
+    <section class="summary">
+
+        <h2>
+            About ONE PIECE
+        </h2>
 
         <p>
-            This website uses cookies to improve
-            your experience.
+            ONE PIECE is one of the most popular anime
+            and manga series ever created. The story
+            follows Monkey D. Luffy, a young pirate
+            whose dream is to become the Pirate King.
+            After eating a Devil Fruit, Luffy gains
+            rubber powers and begins sailing across
+            the dangerous Grand Line in search of the
+            legendary treasure known as the One Piece.
+
+            Along the way, Luffy forms the Straw Hat
+            Pirates, a crew made up of skilled fighters,
+            navigators, cooks, doctors and inventors.
+            Together they face powerful enemies,
+            explore mysterious islands and uncover
+            hidden secrets about the world.
+
+            ONE PIECE is loved for its emotional
+            storytelling, action scenes, humour and
+            unforgettable characters. Each story arc
+            introduces new adventures and challenges
+            that help the characters grow stronger.
+            The series has inspired millions of fans
+            worldwide and continues to be one of the
+            highest-selling manga franchises in history.
         </p>
 
-        <button id="acceptCookies"
-        type="button">
+    </section>
 
-            Accept
+</main>
 
-        </button>
+<footer>
 
-    </div>
+    <p>
+        © 2026 Grand Line Hub
+    </p>
 
-    <script>
-
-        const cookieBanner =
-        document.getElementById("cookieBanner");
-
-        const acceptCookies =
-        document.getElementById("acceptCookies");
-
-        if(localStorage.getItem("cookiesAccepted")){
-
-            cookieBanner.style.display = "none";
-
-        }
-
-        acceptCookies.addEventListener("click", () => {
-
-            localStorage.setItem(
-                "cookiesAccepted",
-                "true"
-            );
-
-            cookieBanner.style.display = "none";
-
-        });
-
-    </script>
+</footer>
 
 </body>
 
