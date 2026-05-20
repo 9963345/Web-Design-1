@@ -206,3 +206,9 @@ footer{
     }
 
 }
+
+.imgtgthr {
+    overflow: hidden;
+    border-radius: 25px;
+    padding: 2%, 0;
+}
